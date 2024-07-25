@@ -3,6 +3,7 @@ addEventListener("DOMContentLoaded", function() {
   var hide = document.getElementById("hide");
   var canvas = document.getElementById("canvas");
   var destroy = document.getElementById("destroy");
+  var context = canvas.getContext("2d", { alpha: false });
   if (destroy.remove) {
     hide.remove();
     destroy.remove();
@@ -27,4 +28,42 @@ addEventListener("DOMContentLoaded", function() {
   addEventListener("focus", resize);
   addEventListener("resize", resize);
   resize();
+  var scripts = ["game", "engine"];
+  var images = ["placeholder"];
+  for (var i = 0; i < 100; i += 1) {
+    images.push("placeholder");
+  };
+  var loadedImages = [];
+  var maximum = scripts.length + images.length;
+  var amount = maximum;
+  function count() {
+    amount -= 1;
+    context.fillStyle = "#000";
+    context.fillRect(0, 0, 1280, 720);
+    context.lineWidth = 4;
+    context.strokeStyle = "#fff";
+    context.strokeRect(316, 316, 648, 88);
+    context.fillStyle = "#2b3184";
+    context.fillRect(320, 320, (1 - (amount / maximum)) * 640, 80);
+    if (amount < 1) {
+      setTimeout(function() {
+
+      }, 100)
+    };
+  };
+  var length = scripts.length;
+  for (var i = 0; i < length; i += 1) {
+    var script = document.createElement("script");
+    script.setAttribute("type", "text/javascript");
+    script.addEventListener("load", count);
+    script.setAttribute("src", "scripts/" + scripts[i] + ".js");
+    document.getElementsByTagName("head")[0].appendChild(script);
+  };
+  length = images.length;
+  for (var i = 0; i < length; i += 1) {
+    var image = new Image();
+    loadedImages.push({ image: image, name: images[i] });
+    image.addEventListener("load", count);
+    image.src = "assets/images/" + images[i] + ".png";
+  };
 });
