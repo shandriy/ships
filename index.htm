@@ -4,55 +4,64 @@
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="styles/main.css">
   <title>Index</title>
 </head>
 <body>
-  <noscript>
-    This app requires JavaScript to run.
-    <br>Please enable JavaScript. This can be done on different browsers.
-    <hr>
-    Mozilla Firefox:
-    <ul>
-      <li>Navigate to the URL `about:config'.</li>
-      <li>Press `Accept the Risk and Continue' if a warning appears.</li>
-      <li>In the search bar, enter `javascript.enabled'.</li>
-      <li>Toggle it by pressing the button on the right.</li>
-    </ul>
-    Google Chrome:
-    <ul>
-      <li>Navigate to the URL `Chrome://settings/content/javascript'.</li>
-      <li>Toggle the button to the right of `Allowed (recommended)'.</li>
-    </ul>
-    Safari for Mac OS X:
-    <ul>
-      <li>Press &#x2318; + , (Command + Comma) to open preferences.</li>
-      <li>Click on `Security'.</li>
-      <li>Toggle the checkbox to the left of `Enable JavaScript'.</li>
-    </ul>
-    Microsoft Edge:
-    <ul>
-      <li>Navigate to the URL `edge://settings/content/javascript'.</li>
-      <li>Toggle the button to the right of `Allowed (recommended)'.</li>
-    </ul>
-  </noscript>
-  <canvas>
-    This app requires HTML5 support.
-    <br>Try updating your browser to the latest version.
-    <br>If the error persists, make sure you have JavaScript enabled.
-    <ul>
-      <li>Mozilla Firefox: <a href="http://firefox.com">firefox.com</a></li>
-      <li>Google Chrome: <a href="http://chrome.com">chrome.com</a></li>
-      <li>ungoogled-chromium: <a href="http://ungoogled-software.github.io/ungoogled-chromium-binaries">github.io</a></li>
-      <li>Microsoft Edge: <a href="http://microsoft.com/edge/download">microsoft.com</a></li>
-      <li>Opera Browser: <a href="http://opera.com">opera.com</a></li>
-      <li>Opera GX: <a href="http://opera.com/gx">opera.com</a></li>
-      <li>Samsung Internet Browser: <a href="http://www.samsung.com/us/support/owners/app/samsung-internet">samsung.com</a></li>
-      <li>UC Browser: <a href="http://ucweb.com/">ucweb.com</a></li>
-      <li>QQ&#x6D4F;&#x89C8;&#x5668;&#x7684;: <a href="http://browser.qq.com">qq.com</a></li>
-      <li>Brave Browser: <a href="http://brave.com/">brave.com</a></li>
-      <li>Vivaldi Browser: <a href="http://vivaldi.com/">vivaldi.com</a></li>
-      <li>Floorp Browser: <a href="http://floorp.app">floorp.app</a></li>
-    </ul>
-  </canvas>
+  <div id="destroy">
+    <noscript>
+      <span class="red">This app requires JavaScript.</span>
+      <br>Please enable JavaScript. This can be done on different browsers.
+      <hr>
+      Mozilla Firefox:
+      <ul>
+        <li>Navigate to the URL `about:config'.</li>
+        <li>Press `Accept the Risk and Continue' if a warning appears.</li>
+        <li>In the search bar, enter `javascript.enabled'.</li>
+        <li>Toggle it by pressing the button on the right.</li>
+      </ul>
+      Google Chrome:
+      <ul>
+        <li>Navigate to the URL `Chrome://settings/content/javascript'.</li>
+        <li>Toggle the button to the right of `Allowed (recommended)'.</li>
+      </ul>
+      Safari for Mac OS X:
+      <ul>
+        <li>Press &#x2318; + , (Command + Comma) to open preferences.</li>
+        <li>Click on `Security'.</li>
+        <li>Toggle the checkbox to the left of `Enable JavaScript'.</li>
+      </ul>
+      Microsoft Edge:
+      <ul>
+        <li>Navigate to the URL `edge://settings/content/javascript'.</li>
+        <li>Toggle the button to the right of `Allowed (recommended)'.</li>
+      </ul>
+    </noscript>
+    <canvas>
+      <span class="red">This app requires HTML5 support.</span>
+      <br>Try updating your browser to the latest version.
+      <br>If the error persists, make sure you have JavaScript enabled.
+      <ul>
+        <li>Mozilla Firefox: <a href="http://firefox.com">firefox.com</a></li>
+        <li>Google Chrome: <a href="http://chrome.com">chrome.com</a></li>
+        <li>ungoogled-chromium: <a href="http://ungoogled-software.github.io/ungoogled-chromium-binaries">github.io</a></li>
+        <li>Microsoft Edge: <a href="http://microsoft.com/edge/download">microsoft.com</a></li>
+        <li>Opera Browser: <a href="http://opera.com">opera.com</a></li>
+        <li>Opera GX: <a href="http://opera.com/gx">opera.com</a></li>
+        <li>Samsung Internet Browser: <a href="http://www.samsung.com/us/support/owners/app/samsung-internet">samsung.com</a></li>
+        <li>UC Browser: <a href="http://ucweb.com/">ucweb.com</a></li>
+        <li>QQ&#x6D4F;&#x89C8;&#x5668;&#x7684;: <a href="http://browser.qq.com">qq.com</a></li>
+        <li>Brave Browser: <a href="http://brave.com/">brave.com</a></li>
+        <li>Vivaldi Browser: <a href="http://vivaldi.com/">vivaldi.com</a></li>
+        <li>Floorp Browser: <a href="http://floorp.app">floorp.app</a></li>
+      </ul>
+    </canvas>
+  </div>
+  <div id="hide">
+    CSS Not loading.
+    <br>Check your internet connection.
+    <br>This might be a problem server side.
+  </div>
+  <canvas id="canvas"></canvas>
 </body>
 </html>
