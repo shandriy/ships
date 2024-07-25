@@ -30,9 +30,6 @@ addEventListener("DOMContentLoaded", function() {
   resize();
   var scripts = ["game", "engine"];
   var images = ["placeholder"];
-  for (var i = 0; i < 100; i += 1) {
-    images.push("placeholder");
-  };
   var loadedImages = [];
   var maximum = scripts.length + images.length;
   var amount = maximum;
