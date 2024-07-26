@@ -28,7 +28,7 @@ addEventListener("DOMContentLoaded", function() {
   addEventListener("focus", resize);
   addEventListener("resize", resize);
   resize();
-  var scripts = ["game", "engine", "engine/kb"];
+  var scripts = ["engine/kb", "game/load"];
   var images = ["placeholder"];
   var loadedImages = [];
   var maximum = scripts.length + images.length;
@@ -39,9 +39,9 @@ addEventListener("DOMContentLoaded", function() {
     context.fillRect(0, 0, 1280, 720);
     context.lineWidth = 4;
     context.strokeStyle = "#fff";
-    context.strokeRect(316, 316, 648, 88);
-    context.fillStyle = "#2b3184";
-    context.fillRect(320, 320, (1 - (amount / maximum)) * 640, 80);
+    context.strokeRect(40, 648, 1200, 32);
+    context.fillStyle = "#3c4194";
+    context.fillRect(46, 654, (1 - (amount / maximum)) * 1188, 20);
     if (amount < 1) {
       setTimeout(function() {
 
