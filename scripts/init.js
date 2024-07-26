@@ -28,7 +28,7 @@ addEventListener("DOMContentLoaded", function() {
   addEventListener("focus", resize);
   addEventListener("resize", resize);
   resize();
-  var scripts = ["game", "engine"];
+  var scripts = ["game", "engine", "engine/kb"];
   var images = ["placeholder"];
   var loadedImages = [];
   var maximum = scripts.length + images.length;
