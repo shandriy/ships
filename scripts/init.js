@@ -28,7 +28,7 @@ addEventListener("DOMContentLoaded", function() {
   addEventListener("focus", resize);
   addEventListener("resize", resize);
   resize();
-  var scripts = ["engine/kb", "game/load"];
+  var scripts = ["engine/kb"];
   var images = ["placeholder"];
   var loadedImages = [];
   var maximum = scripts.length + images.length;
@@ -39,13 +39,13 @@ addEventListener("DOMContentLoaded", function() {
     context.fillRect(0, 0, 1280, 720);
     context.lineWidth = 4;
     context.strokeStyle = "#fff";
-    context.strokeRect(40, 648, 1200, 32);
+    context.strokeRect(40, 329, 1200, 62);
     context.fillStyle = "#3c4194";
-    context.fillRect(46, 654, (1 - (amount / maximum)) * 1188, 20);
+    context.fillRect(46, 335, (1 - (amount / maximum)) * 1188, 50);
     if (amount < 1) {
       setTimeout(function() {
 
-      }, 100)
+      }, 100);
     };
   };
   var length = scripts.length;
